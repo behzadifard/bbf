@@ -1,0 +1,147 @@
+.perspolis-headr{
+  background: url('../images/background/perspolis/perspolis.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 120%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  &-content{
+    padding: 9em 7.5em;
+    width: 100%;
+    height: 110vh;
+    background: rgba(0,0,0,.5);
+    h1{
+      color: #fff;
+      text-transform: uppercase;
+      margin-bottom: .5em;
+    }
+    p{
+      color: #fff;
+    }
+  }
+}
+
+//---Carousel-----
+#slider, .wrap, .slide_content{
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.wrap{
+  position: relative;
+}
+
+.slide{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.perspolis_slide_1{
+  background: url('../images/background/perspolis/1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.perspolis_slide_2{
+  background: url('../images/background/perspolis/2.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.perspolis_slide_3{
+  background: url('../images/background/perspolis/3.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.perspolis_slide_4{
+  background: url('../images/background/perspolis/4.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.perspolis_slide_5{
+  background: url('../images/background/perspolis/5.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+
+.slide_content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  span{
+    font-size: 5rem;
+  }
+}
+
+.arrow{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  // margin-top: -50%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  z-index: 99;
+}
+
+#arrow-left{
+  border-width: 30px 40px 30px 0px;
+  border-color: transparent $secondaryColor transparent transparent;
+  left: 0;
+  margin-left: 30px;
+}
+
+#arrow-right{
+  border-width: 30px 0px 30px 40px;
+  border-color: transparent transparent transparent $secondaryColor;
+  right: 0;
+  margin-right: 30px;
+}
+
+
+
+
+/*===================
+   Monitor
+====================*/
+.monitor-wrap{
+  background: $primaryColor;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40rem;
+
+  .monitor{
+    width: 40em;
+    height: 30em;
+  }
+
+  iframe{
+    position: absolute;
+    top: 0rem;
+    width: 38em;
+    height: 22em;
+  }
+}
+

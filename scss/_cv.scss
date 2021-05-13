@@ -1,0 +1,35 @@
+#cv-header{
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  
+ 
+  
+  .cv-header-title1:hover{
+    cursor: pointer;
+  }
+  .cv-header-title1:hover + #test{
+   transform: scale(2);
+   z-index: 1;
+  }
+  a{
+    margin: 1rem;
+    padding: 1.2rem 3rem;
+    background: $primaryColor;
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    width: auto;
+    position: absolute;
+    top: 6.2rem;
+    left: 1rem;
+    z-index: 2;
+  }
+  img{
+    transition: all 2s linear;
+  }
+}
+
+

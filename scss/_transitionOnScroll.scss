@@ -1,0 +1,83 @@
+.transition-on-scroll-title1{
+  position: relative;
+  margin: 0;
+  padding: 1rem;
+  color: #fff;
+  display: inline-block;
+  font-size: 3em;
+  transition: .2s;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+.transition-on-scroll-title1::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $secondaryColor;;
+  transition: 0.2s;
+  transform-origin: right;
+  transform: scaleX(1);
+}
+.transition-on-scroll-title1[data-scroll="in"]{
+  transform: scaleX(1);
+  transition-delay: .3s;
+}
+.transition-on-scroll-title1[data-scroll="in"]::before{
+  transform: scaleX(0);
+  transition-delay: .5s;
+}
+
+
+.transition-on-scroll-title2{
+  position: relative;
+  margin: 5px 0 0 0;
+  padding: 0;
+  display: block;
+  width: 50%;
+  font-size: 2em;
+  color: $secondaryColor;
+  transition: .2s;
+  transform-origin: right;
+  transform: scaleX(0);
+}
+
+.transition-on-scroll-title2::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $secondaryColor;
+  transition: .2s;
+  transform-origin: right;
+  transform: scaleX(1);
+}
+
+.transition-on-scroll-title2[data-scroll="in"]{
+  transform: scaleX(1);
+  transition-delay: .8s;
+}
+.transition-on-scroll-title2[data-scroll="in"]::before{
+  transform: scaleX(0);
+  transition-delay: 1s;
+}
+
+p.transition-text{
+  font-size: 1.2em;
+  color: yellow;
+  transition: .5s;
+  padding: 2em;
+  opacity: 0;
+}
+p.transition-text[data-scroll="in"]{
+  opacity: 1;
+  transition-delay: .5s;
+}
+
+
+

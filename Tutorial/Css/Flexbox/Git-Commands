@@ -1,0 +1,72 @@
+$git --version
+------------------------------------------------------------------------
+
+*** This is not a git command. touch is used to create files in directory
+$ touch index.html 
+------------------------------------------------------------------------
+
+*** This will initialize current directory as Local Repository
+$ git init
+------------------------------------------------------------------------
+
+*** Add your name and Email address to git
+$ git config --global user.name 'Bahram Behzadi'
+$ git config --global user.email 'behzadi-fard@gmx.de'
+------------------------------------------------------------------------
+
+*** Add file(s) to Stage area
+$ git add index.html
+$ git add *.html  -> will add all files with .html extenstion to the stage area
+$ git add .       -> will add all files to stage area
+------------------------------------------------------------------------
+
+*** Remove file from Stage area
+$ git rm --cached index.html
+------------------------------------------------------------------------
+
+*** Commit
+$ git commit -m 'comment comes here'
+------------------------------------------------------------------------
+
+
+
+*** Branches
+$ git branch desk
+$ git checkout desk
+
+-----> How branches work:
+
+1- make new branch
+2- make your changes
+3- add all changes to stage area
+4- commit all
+5- now, if you switch back to master branch you will see no changes. 
+6- merge new edited branch while you are in master
+
+------------------------------------------------------------------------
+
+
+
+
+*** Define remote Repository to git
+1- make an account in github
+2- $ git remote add origin https://github.com/behzadifard/behzadifard.github.io 
+------------------------------------------------------------------------
+
+
+
+
+
+
+
+***
+------------------------------------------------------------------------
+
+
+
+
+
+
+
+***
+------------------------------------------------------------------------

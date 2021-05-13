@@ -1,0 +1,1448 @@
+@media(max-width: 700px){
+/*===============
+    Navbar
+=================*/
+nav.navbar{
+  display: flex;
+  flex-direction: column;
+  // background: green;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+ 
+  .brand-title{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0rem;
+    padding:0rem;
+    width: 100%;
+    height: 30px;
+    
+    a{
+      margin: 2rem 0;
+    }
+
+    .bar-container{
+      padding: 0;
+      margin: 0;
+      background: $primaryColor;
+      left: 10px;
+      top: 10px;
+      width: 40px;
+      height: 30px;
+      
+      .toggle-button{
+        position: absolute;
+        top: -1.6rem;
+        left: .7em;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+      }
+      
+      .bar{
+        width: 15px;
+        height: 2px;
+        background-color: #fff;
+        padding: 0;
+        margin: .1em 0;
+      }
+    }
+    
+
+
+    .navbar-links{
+      display: none;
+      background: rgba(206,17,65,.95);
+      width: 100%;
+      height: 120vh;
+      padding: 6em 0 0 0;
+      
+      
+      ul{
+        flex-direction: column;
+        width: 100%;
+      }
+      li{
+        text-align: center;
+        margin-top: 2rem;
+        a{
+          font-size: 1.5rem;
+          animation: transitionInX 2s;
+          animation: transitionInX 2s;
+          color: #fff;
+        }
+        a:hover{
+          color: #f0ea35;
+        }
+      }
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+
+    img{
+      width: 8rem;
+      padding: 0 0em .5em 1.2em;
+      // margin: 1rem;
+      background: $primaryColor;
+      height: 30px;
+      position: absolute;
+      right: 0;
+      top: .6em;
+     }
+  }
+}
+
+/*===============
+    Header Section
+=================*/
+.header-section{
+  
+
+  .header-title{
+    position: absolute;
+    top: 5rem;
+    left: .6rem;
+    padding: .2rem 1rem;
+    background:#333;
+    color: #fff;
+    animation: transitionInX 2s;
+    font-size: 1rem;
+  }
+  .header-title2{
+    position: absolute;
+    top: 7rem;
+    left: 4rem;
+    padding: .2rem 1rem;
+    background:$primaryColor;
+    color: #fff;
+    font-size: 1rem;
+    animation: transitionInX 3s;
+  }
+  video{
+    display: block;
+  }
+}
+
+
+
+
+
+/*===================
+   index-section-about
+====================*/
+
+
+#index-section-about{
+  position: relative;
+  height: auto;
+  overflow: hidden;
+
+  .overalColor{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.3);
+    z-index: 2;
+  }
+  
+  
+  .index-section-about-title1{
+    margin: 0;
+    padding: .5rem 1rem .2rem 1rem;
+    background: rgba(0,0,0,.8);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1em;
+    width: auto;
+    position: absolute;
+    bottom: 5rem;
+    left: 1.5rem;
+    z-index: 2;
+
+    
+    transition: .2s;
+    transform-origin: center top;
+    transform: scaleY(0);
+   
+  }
+  .index-section-about-title1[data-scroll="in"]{
+    transform: scaleY(1);
+    transition-delay: .3s;
+  }
+  .index-section-about[data-scroll="in"]::before{
+    transform: scaleY(0);
+    transition-delay: .5s;
+  }
+  .index-section-about-title1:hover{
+    cursor: pointer;
+  }
+  .index-section-about-title1:hover + #test{
+   transform: scale(1.1);
+   z-index: 1;
+  }
+
+  p{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    position: absolute;
+    bottom: 1.7rem;
+    left: 1.7rem;
+    z-index: 2;
+
+    
+    transition: .2s;
+    transform-origin: center top;
+    transform: scaleY(0);
+  }
+  p[data-scroll="in"]{
+    transform: scaleY(1);
+    transition-delay: .3s;
+  }
+  p[data-scroll="in"]::before{
+    transform: scaleY(0);
+    transition-delay: .5s;
+  }
+
+  a{
+    color: $primaryColor;
+    font-family: $FontFamily;
+  }
+  
+  em{
+    font-size: .8rem;
+    letter-spacing: .15rem;
+    color: #fff;
+    font-weight: normal;
+  }
+
+  img{
+    transition: all .75s linear;
+  }
+}
+
+
+
+
+/*============================
+   index-section-certificates
+=============================*/
+
+
+#index-section-certificates{
+  position: relative;
+  height: auto;
+  overflow: hidden;
+
+  .overalColor{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.3);
+    z-index: 2;
+  }
+  
+  
+  
+  .index-section-certificates-title1{
+    margin: 0;
+    padding: .5rem 1rem .2rem 1rem;
+    background: rgba(0,0,0,.8);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: auto;
+    position: absolute;
+    bottom: 5.5rem;
+    left: 4.8rem;
+    z-index: 2;
+
+    
+    transition: .2s;
+    transform-origin: center top;
+    transform: scaleY(0);
+   
+  }
+  
+  .index-section-certificates-title1[data-scroll="in"]{
+    transform: scaleY(1);
+    transition-delay: .3s;
+  }
+  .index-section-certificates[data-scroll="in"]::before{
+    transform: scaleY(0);
+    transition-delay: .5s;
+  }
+  .index-section-certificates-title1:hover{
+    cursor: pointer;
+  }
+  .index-section-certificates-title1:hover + #test{
+   transform: scale(1.1);
+   z-index: 1;
+  }
+
+  p{
+    font-size: 1rem;
+    font-weight:normal;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    position: absolute;
+    bottom: 2rem;
+    left: 1.7rem;
+    z-index: 2;
+
+    
+    transition: .2s;
+    transform-origin: center top;
+    transform: scaleY(0);
+  }
+  p[data-scroll="in"]{
+    transform: scaleY(1);
+    transition-delay: .3s;
+  }
+  p[data-scroll="in"]::before{
+    transform: scaleY(0);
+    transition-delay: .5s;
+  }
+
+  a{
+    color: $primaryColor;
+    font-family: $FontFamily;
+  }
+  em{
+    font-size: .8rem;
+    letter-spacing: .15rem;
+    color: #fff;
+    font-weight: normal;
+  }
+
+
+  img{
+    transition: all .75s linear;
+  }
+}
+
+
+
+/*===================
+   Section 00
+====================*/
+.desk{
+  background:  url('../images/background/header-image-black-000.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 130% 85%;
+  position: relative;
+  height: 50vh;
+
+  #cc{
+    position: absolute;
+    top: -200px;
+    left: 44%;
+    width: 35px;
+    height: auto;
+
+    transition: 2.2s;
+    transform-origin: center top;
+    transform: scaleY(1);
+
+  }
+  #cc[data-scroll="in"]{
+    transform: scaleY(1);
+    top: 20px;
+    transition-delay: .3s;
+  }
+  #cc[data-scroll="in"]::before{
+    transform: scaleY(0);
+    transition-delay: .5s;
+  }
+
+  #cc2{
+    position: absolute;
+    top: -100px;
+    left: 55%;
+    width: 35px;
+    height: auto;
+
+    transition: 4s;
+    transform-origin: center top;
+    transform: scaleY(1);
+
+  }
+  #cc2[data-scroll="in"]{
+    transform: scaleY(1);
+    top: 68px;
+    transition-delay: .3s;
+  }
+  #cc2[data-scroll="in"]::before{
+    transform: scaleY(0);
+    transition-delay: .5s;
+  }
+
+  #cc3{
+    position: absolute;
+    top: -200px;
+    left: 70%;
+    width: 35px;
+    height: auto;
+
+    transition: 3s;
+    transform-origin: center top;
+    transform: scaleY(1);
+
+  }
+  #cc3[data-scroll="in"]{
+    transform: scaleY(1);
+    top: 120px;
+    transition-delay: .3s;
+  }
+  #cc3[data-scroll="in"]::before{
+    transform: scaleY(0);
+    transition-delay: .5s;
+  }
+}
+
+
+
+/*===================
+   Section 01
+====================*/
+.hidden{
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+.show{
+  opacity: 1;
+}
+.bcg1{
+  background-image: url(../images/background/girls/girl2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150% 100%;
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+
+ 
+}
+
+.bcg2{
+  background-image: url(../images/background/girls/girl3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150% 100%;
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.bcg3{
+  background-image: url(../images/background/girls/girl1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150% 100%;
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+
+
+#section-01{
+  background-image: url(../images/background/girls/girl4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150% 100%;
+  position: relative;
+  height: 100vh;
+ 
+
+  .section-01-titles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+
+    .section-01-title1{
+      background: transparent;
+      margin: 1rem;
+      padding: .5rem 3rem;
+      position: absolute;
+      bottom: 0;
+      font-size: 18px;
+      color: #fff;
+      transition: .2s;
+      transform-origin: center top;
+      transform: scaleY(0);
+      z-index: 4;
+    }
+    .section-01-title1[data-scroll="in"]{
+      transform: scaleY(1);
+      transition-delay: .3s;
+    }
+    .section-01-title1[data-scroll="in"]::before{
+      transform: scaleY(0);
+      transition-delay: .5s;
+    }
+    .section-01-title1:hover{
+      cursor: pointer;
+    }
+    
+    .section-01-title2{
+      background: transparent;
+      margin: 1rem;
+      padding: .5rem 3rem;
+      position: absolute;
+      bottom: 1.5em;
+      font-size: 18px;
+      color: #fff;
+      transition: .2s;
+      transform-origin: center top;
+      transform: scaleY(0);
+      z-index: 4;
+    }
+    .section-01-title2[data-scroll="in"]{
+      transform: scaleY(1);
+      transition-delay: .3s;
+    }
+    .section-01-title2[data-scroll="in"]::before{
+      transform: scaleY(0);
+      transition-delay: .5s;
+    }
+    
+    .section-01-title2:hover{
+      cursor: pointer;
+    }
+
+    .section-01-title3{
+      background:transparent;
+      margin: 1rem;
+      padding: .5rem 3rem;
+      position: absolute;
+      bottom: 3em;
+      font-size: 18px;
+      color: #fff;
+      transition: .2s;
+      transform-origin: center top;
+      transform: scaleY(0);
+      z-index: 4;
+    }
+    .section-01-title3[data-scroll="in"]{
+      transform: scaleY(1);
+      transition-delay: .3s;
+    }
+    .section-01-title3[data-scroll="in"]::before{
+      transform: scaleY(0);
+      transition-delay: .5s;
+    }
+    
+    .section-01-title3:hover{
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+
+/*===================
+   Section 02
+====================*/
+
+
+#section-02{
+  position: relative;
+  height: 40vh;
+  overflow: hidden;
+  
+  
+  .section-02-title1{
+    margin: 1rem;
+    padding: 1.2rem 3rem;
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    width: auto;
+    position: absolute;
+    top: 65%;
+    left: 2%;
+    z-index: 2;
+
+    
+    transition: .2s;
+    transform-origin: center top;
+    transform: scaleY(0);
+   
+  }
+  .section-02-title1[data-scroll="in"]{
+    transform: scaleY(1);
+    transition-delay: .3s;
+  }
+  .section-02-title1[data-scroll="in"]::before{
+    transform: scaleY(0);
+    transition-delay: .5s;
+  }
+  .section-02-title1:hover{
+    cursor: pointer;
+  }
+  .section-02-title1:hover + #test{
+   transform: scale(2);
+   z-index: 1;
+  }
+  img{
+    transition: all 2s linear;
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
+
+/*===============
+    Summary
+=================*/
+.summary{
+  width: 100%;
+
+  span.color-black{
+    // font-size: 1.2 rem;
+  }
+  h2.color-red{
+    font-size: 1.2rem;
+  }
+}
+
+
+
+/*================
+    Container
+================*/
+
+.row-white{
+  background: #fff;
+  .container{
+    padding: 2rem 2rem;
+  }
+}
+.row-red{
+  background: $primaryColor;
+  
+
+  .container{
+    padding: 2rem 2rem;
+  }
+}
+
+
+/*===============
+    Parallax
+=================*/
+
+#parallax-section1{
+  display: none;
+}
+
+
+
+
+
+
+
+/*===============
+    Card
+=================*/
+.card-container{
+  padding: 0;
+  margin: 0;
+
+  .card-items{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin:0;
+    padding: 0;
+    
+    .card{
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      img{
+        height: 100%;
+        width: 100%;
+        border: 0;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .card-text{
+      padding: 1rem;
+      text-align: left;
+      h2{
+        color: $primaryColor;
+        font-size: 25px;
+        margin: 0rem 0rem .8rem .5rem;
+      }
+      a{
+        margin-left: .6rem;
+        margin-top: 1rem;
+      }
+      a:hover{
+        color: #fff;
+      }
+      p{
+        color: #888;
+        margin: 0rem 0rem .8rem .5rem;
+      }
+      ul{
+        list-style-type: none;
+        padding: .5rem;
+        li{
+          color: #111;
+        }
+      }
+    
+    }
+  }
+}
+
+
+
+
+/*===============
+    Interests
+=================*/
+
+.interest-wrap{
+  display: flex;
+  flex-direction: column;
+
+  div{
+    width: 100%;
+    padding: 2em;
+
+    h2{
+      margin-top: 1em;
+    }
+  }
+}
+
+
+
+/*===================
+    About Page
+====================*/
+.section01{
+  display: flex;
+  flex-direction: column;
+  
+  div{
+    width: 100%;
+  }
+  .div-left{
+    padding: 2em 1em;
+    background: #fff;
+  }
+
+  .div-right{
+    padding: 4em 1em;
+    background: $primaryColor;
+    p{
+      color: #fff;
+    }
+  }
+}
+
+.about-bcg1{
+  background-image: url(../images/background/iran/perspolis.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  height: 110vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+
+  &-content{
+    padding: 6em 1em;
+    width: 100%;
+    height: 110vh;
+    background: rgba(0,0,0,.5);
+    h1{
+      color: #fff;
+      text-transform: uppercase;
+    }
+    p{
+      color: #fff;
+    }
+  }
+}
+
+.about-bcg2{
+  background-image: url(../images/background/iran/shiraz.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  position: absolute;
+  height: 110vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  &-content{
+    padding: 8em 1em;
+    width: 100%;
+    height: 110vh;
+    background: rgba(0,0,0,.5);
+    h1{
+      color: #fff;
+      text-transform: uppercase;
+    }
+    p{
+      color: #fff;
+    }
+  }
+}
+
+.about-bcg3{
+  background-image: url(../images/background/iran/tehran.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  height: 110vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  &-content{
+    padding: 8em 1em;
+    width: 100%;
+    height: 110vh;
+    background: rgba(0,0,0,.5);
+    h1{
+      color: #fff;
+      text-transform: uppercase;
+    }
+    p{
+      color: #fff;
+    }
+  }
+}
+
+
+
+#about-section-01{
+  background-image: url(../images/background/me.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 110vh;
+
+  &-overall-color{
+    width: 100%;
+    height: 110vh;
+    background: rgba(0,0,0,0.2);
+  }
+ 
+
+  .about-section-01-titles{
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    .about-section-01-title1{
+      // background: rgba(187, 171, 145, .6);
+      background: $primaryColor;
+      font-size: .75em;
+      margin-top: 25rem;
+      padding: 0.5em 2em;
+      color: #fff;
+      transition: .2s;
+      transform-origin: center top;
+      transform: scaleY(0);
+      z-index: 4;
+    }
+    .about-section-01-title1[data-scroll="in"]{
+      transform: scaleY(1);
+      transition-delay: .3s;
+    }
+    .about-section-01-title1[data-scroll="in"]::before{
+      transform: scaleY(0);
+      transition-delay: .5s;
+    }
+    .about-section-01-title1:hover{
+      cursor: pointer;
+    }
+    
+    .about-section-01-title2{
+      background: rgba(187, 171, 145, .6);
+      font-size: .75em;
+      margin-top: 25rem;
+      padding: 0.5em 2em;
+      color: #fff;
+      transition: .2s;
+      transform-origin: center top;
+      transform: scaleY(0);
+      z-index: 4;
+    }
+    .about-section-01-title2[data-scroll="in"]{
+      transform: scaleY(1);
+      transition-delay: .3s;
+    }
+    .about-section-01-title2[data-scroll="in"]::before{
+      transform: scaleY(0);
+      transition-delay: .5s;
+    }
+    
+    .about-section-01-title2:hover{
+      cursor: pointer;
+    }
+
+    .about-section-01-title3{
+      background: rgba(187, 171, 145, .6);
+      font-size: .75em;
+      margin-top: 25rem;
+      padding: 0.5em 2em;
+      color: #fff;
+      transition: .2s;
+      transform-origin: center top;
+      transform: scaleY(0);
+      z-index: 4;
+    }
+    .about-section-01-title3[data-scroll="in"]{
+      transform: scaleY(1);
+      transition-delay: .3s;
+    }
+    .about-section-01-title3[data-scroll="in"]::before{
+      transform: scaleY(0);
+      transition-delay: .5s;
+    }
+    
+    .about-section-01-title3:hover{
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+/*===================
+   Monitor
+====================*/
+.monitor-wrap{
+  height: 400px;
+  
+
+  .monitor{
+   display: none;
+  }
+
+  iframe{
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+
+/*===================
+    Perspolis Page
+====================*/
+.perspolis-headr{
+  background: url('../images/background/perspolis/perspolis.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150% 120%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  &-content{
+    padding: 5em 1em;
+    width: 100%;
+    height: auto;
+    background: rgba(0,0,0,.5);
+    h1{
+      color: #fff;
+      text-transform: uppercase;
+    }
+    p{
+      color: #fff;
+    }
+  }
+}
+
+
+iframe.perspolis-video-01{
+  margin: 0;
+  padding: 1em;
+  width: 100%;
+  height: 400px;
+}
+
+//---Carousel-----
+#slider, .wrap, .slide_content{
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.wrap{
+  position: relative;
+}
+
+.slide{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.perspolis_slide_1{
+  background: url('../images/background/perspolis/1.jpg');
+  background-repeat: no-repeat;
+  background-size: 200% 100%;
+  background-position: center;
+}
+
+.perspolis_slide_2{
+  background: url('../images/background/perspolis/2.jpg');
+  background-repeat: no-repeat;
+  background-size: 150% 100%;
+  background-position: center;
+}
+
+.perspolis_slide_3{
+  background: url('../images/background/perspolis/3.jpg');
+  background-repeat: no-repeat;
+  background-size: 180% 100%;
+  background-position: center;
+}
+
+.perspolis_slide_4{
+  background: url('../images/background/perspolis/4.jpg');
+  background-repeat: no-repeat;
+  background-size: 250% 100%;
+  background-position: center;
+}
+.perspolis_slide_5{
+  background: url('../images/background/perspolis/5.jpg');
+  background-repeat: no-repeat;
+  background-size: 400% 200%;
+  background-position: center;
+}
+
+
+.slide_content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  span{
+    font-size: 5rem;
+  }
+}
+
+.arrow{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  // margin-top: -50%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  z-index: 99;
+}
+
+#arrow-left{
+  border-width: 10px 20px 10px 0px;
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 15px;
+}
+
+#arrow-right{
+  border-width: 10px 0px 10px 20px;
+  border-color: transparent transparent transparent #fff;
+  right: 0;
+  margin-right: 15px;
+}
+
+
+
+
+/*===================
+    Shiraz Page
+====================*/
+.shiraz-headr{
+  background: url('../images/background/shiraz/shiraz-cover.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 250% 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  &-content{
+    padding: 5em 1em;
+    width: 100%;
+    height: auto;
+    background: rgba(0,0,0,.5);
+    h1{
+      color: #fff;
+      text-transform: uppercase;
+    }
+    p{
+      color: #fff;
+    }
+  }
+}
+
+iframe.shiraz-video-01{
+  margin: 0;
+  padding: 1em;
+  width: 100%;
+  height: 400px;
+}
+
+
+// shiraz carousel
+.shiraz_slide_1{
+  background: url('../images/background/shiraz/hafez.jpg');
+  background-repeat: no-repeat;
+  background-size: 250% 100%;
+  background-position: center;
+}
+
+.shiraz_slide_2{
+  background: url('../images/background/shiraz/saadi.jpeg');
+  background-repeat: no-repeat;
+  background-size: 180% 100%;
+  background-position: center;
+}
+
+.shiraz_slide_3{
+  background: url('../images/background/shiraz/ghali2.jpg');
+  background-repeat: no-repeat;
+  background-size: 180% 100%;
+  background-position: center;
+}
+
+.shiraz_slide_4{
+  background: url('../images/background/shiraz/ghali3.jpg');
+  background-repeat: no-repeat;
+  background-size: 150% 100%;
+  background-position: center;
+}
+.shiraz_slide_5{
+  background: url('../images/background/shiraz/masjed.jpg');
+  background-repeat: no-repeat;
+  background-size: 200% 100%;
+  background-position: center;
+}
+
+
+/*===================
+    Persia Page
+====================*/
+.persia-headr{
+  background: url('../images/background/persia/persia.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200% 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  &-content{
+    padding: 5em 1em;
+    width: 100%;
+    height: auto;
+    background: rgba(0,0,0,.5);
+    h1{
+      color: #fff;
+      text-transform: uppercase;
+    }
+    p{
+      color: #fff;
+    }
+  }
+}
+
+iframe.persia-video-01{
+  margin: 0;
+  padding: 1em;
+  width: 100%;
+  height: 400px;
+}
+
+
+/*===================
+    Certificates Page
+====================*/
+.certificates-headr{
+  background: url('../images/background/certificates/certificates.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200% 100%;
+  height: 70vh;
+}
+
+
+
+
+
+
+/*===================
+   CV Page
+====================*/
+
+
+#cv-header{
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  
+ 
+  
+  .cv-header-title1:hover{
+    cursor: pointer;
+  }
+  .cv-header-title1:hover + #test{
+   transform: scale(2);
+   z-index: 1;
+  }
+  a{
+    margin: 1rem;
+    padding: .2rem 1rem;
+    background: $primaryColor;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    width: auto;
+    position: absolute;
+    top: 25rem;
+    left: 2rem;
+    z-index: 2;
+  }
+  img{
+    transition: all 2s linear;
+  }
+}
+
+
+
+
+
+/*===================
+    Contact Page
+====================*/
+.contact{
+   display: flex;
+   flex-direction: column;
+  
+  .img{
+    img{
+      width: 100%;
+      height: auto;
+      padding: 0em;
+      margin: 0;
+    }
+  }
+
+  .content{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+    margin-left: 0;
+    padding: 1em;
+    text-align: left;
+
+    h1{
+      color: #fff;
+      font-size: 1.5em;
+      margin: 1em 0 1em 0;
+    }
+  }
+}
+
+
+
+.contact-headr{
+  background: url('../images/background/contact/contact.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 140% 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*================
+    Headline black
+================*/
+.headline-black{
+  padding: 0 1em 1.5em 1em;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  font-size: 2rem;
+  background: #000;
+  color: #fff;
+  display: inline-block;
+  transition: .2s;
+  transform-origin: center top;
+  transform: scaleY(0);
+}
+.headline-black[data-scroll="in"]{
+  transform: scaleY(1);
+  transition-delay: .3s;
+}
+.headline-black[data-scroll="in"]::before{
+  transform: scaleY(0);
+  transition-delay: .5s;
+}
+
+
+
+
+/*================
+    Headline red
+================*/
+.headline-red{
+  padding: 1em 1em .7em 1em;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  font-size: 2rem;
+  background: $primaryColor;
+  color: #fff;
+  display: inline-block;
+  transition: .2s;
+  transform-origin: center top;
+  transform: scaleY(0);
+}
+.headline-red[data-scroll="in"]{
+  transform: scaleY(1);
+  transition-delay: .3s;
+}
+.headline-red[data-scroll="in"]::before{
+  transform: scaleY(0);
+  transition-delay: .5s;
+}
+
+
+
+
+
+
+
+/*===============
+    Footer
+=================*/
+footer{
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 100%;
+  background-color: #003c4b;
+
+  .div-1{
+    height: 15rem;
+    width: 100%;
+    position: relative;
+    div{
+      position: absolute;
+      top: 13rem;
+      left: 1.3rem;
+
+      h2{
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1rem;
+      }
+      p{
+        color: #eee;
+      }
+    }
+    .footer-image{
+      width: 60%;
+      height: auto;
+      padding: 3rem 1.3rem 1.3rem 1.3rem;
+      display: block;
+    }
+  }
+
+  .div-2{
+    position: relative;
+
+    .footer-image2{
+      display: none;
+    }
+  }
+}
+
+
+
+
+}// end @media
+

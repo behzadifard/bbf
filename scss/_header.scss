@@ -1,0 +1,58 @@
+
+
+
+/*==================
+    Header Section
+====================*/
+div.header-section{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-attachment: fixed;
+  position: relative;
+  // min-height: 100%;
+  
+  video{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+.header-title{
+  position: absolute;
+  top: 5.1rem;
+  left: 2rem;
+  padding: 1.2rem 3rem;
+  background:#333;
+  color: #fff;
+  animation: transitionInX 2s;
+}
+.header-title2{
+  position: absolute;
+  top: 9rem;
+  left: 4rem;
+  padding: 1.2rem 3rem;
+  background:$primaryColor;
+  color: #fff;
+  animation: transitionInX 3s;
+}
+
+.header-title3{
+  position: absolute;
+  top: 20rem;
+  left: 40rem;
+  padding: 1.2rem 3rem;
+  background:#333;
+  color: #fff;
+  animation: transitionInX-2 2s;
+}
+.header-title4{
+  position: absolute;
+  top: 24rem;
+  left: 38rem;
+  padding: 1.2rem 3rem;
+  background:$primaryColor;
+  color: #fff;
+  animation: transitionInX-2 3s;
+}
+

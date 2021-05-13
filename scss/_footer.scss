@@ -1,0 +1,52 @@
+footer{
+  display: flex;
+  flex-direction: row;
+  height: 16rem;
+  width: 100%;
+  background-color: #003c4b;
+
+  .div-1{
+    height: 15rem;
+    width: 100%;
+    position: relative;
+    div{
+      position: absolute;
+      top: 3.8rem;
+      left: 17rem;
+
+      h2{
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+      }
+      p{
+        color: #eee;
+      }
+    }
+    .footer-image{
+      width: 15rem;
+      height: 15rem;
+      padding: 4rem 0 3rem 5rem;
+      display: block;
+    }
+  }
+
+  .div-2{
+    position: relative;
+
+    .footer-image2{
+      width: 10rem;
+      height: auto;
+      padding: 0;
+      position: absolute;
+      top: -4rem;
+      right: 8rem;
+    }
+  }
+}
+
+
+
+
+
+

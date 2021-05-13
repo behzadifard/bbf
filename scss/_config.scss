@@ -1,0 +1,142 @@
+$FontFamily: 'Kumbh Sans', sans-serif;
+$bodyBackground: #fff;
+$pColor: #f2f3f7;
+$primaryColor: #ce1141;
+$primaryColor-light : lighten(#ce1141, 20%);
+$secondaryColor: #ff8700;
+
+/*
+  @mixin is like a function but it dosen't return anything!
+  it will set the propper values for css properties.
+*/
+
+
+
+// Set background and text color using @mixin
+
+@mixin primary-button ($color){
+  background-color: $color;
+  color: set-text-color($color);
+}
+
+
+
+
+
+@mixin secondary-button ($color){
+  background: set-background-color($color);
+  color:      set-text-color($color);
+}
+
+
+@function set-content-text-color($color){
+  @if(lightness($color) > 70){
+    @return #ce1141;
+  }@else{
+    @return #fff;
+  }
+}
+
+@function set-button-text-color($color){
+  @if(lightness($color) > 70){
+    @return #fff;
+  }@else{
+    @return #ce1141;
+  }
+}
+
+@function set-background-color($color){
+  @if(lightness($color) > 70){
+    @return lighten(#ce1141, 10%);
+  }@else{
+    @return #ff8700;
+  }
+}
+
+// margin and padding Classes
+$spaceamounts: (1,2,3,4,5);
+
+@each $space in $spaceamounts{
+  .m-#{$space}{
+    margin: #{$space}rem;
+  }
+  .mx-#{$space}{
+    margin: 0 #{$space}rem;
+  }
+  .my-#{$space}{
+    margin: #{$space}rem 0;
+  }
+  .p-#{$space}{
+    padding: #{$space}rem;
+  }
+  .px-#{$space}{
+    padding: 0 #{$space}rem;
+  }
+  .py-#{$space}{
+    padding: #{$space}rem 0;
+  }
+}
+
+
+
+
+/*===============
+    Parallax
+=================*/
+.parallax{
+  /*
+      fixed  =  parallax
+      scroll =  normal
+  */
+  background-attachment: fixed;
+  position: relative;
+  min-height: 100%;
+}
+
+
+/*===============
+    accordion
+=================*/
+.accordion{
+  max-width: 100%;
+}
+.accordion .contentBx{
+  position: relative;
+  margin: 10px 20px;
+}
+.accordion .contentBx .label{
+  position: relative;
+  padding: 15px 10px 10px 10px;
+  background: $primaryColor;
+  color: white;
+  cursor: pointer;
+}
+.accordion .contentBx .label::before{
+  content: '+';
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1.5em;
+}
+.accordion .contentBx .content{
+  position: relative;
+  background: rgba(255,255,255,.8);
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+  p{
+    color: #444;
+  }
+}
+.accordion .contentBx.active .content{
+  height: auto;
+  padding: 50px;
+  z-index: 999;
+  a{
+    color: $primaryColor;
+  }
+}
+.accordion .contentBx.active .label::before{
+  content: '-';
+}

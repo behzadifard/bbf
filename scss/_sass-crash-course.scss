@@ -1,0 +1,42 @@
+
+
+*{
+ margin: 0;
+ padding: 0;
+}
+img{
+  width: 100%;
+}
+.showcase{
+  background: $primaryColor;
+  height: 100vh;
+  color: set-content-text-color($primaryColor);
+
+  .container{
+    height: 100vh;
+    max-width: 1100px;
+    padding: 0 30px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, .1);
+    overflow: auto;
+  }
+
+  nav{
+    ul{
+      list-style: none;
+    }
+  }
+
+  &-content{
+    
+    h1{
+      font-size: 50px;
+      line-height: 1.2;
+    }
+    p{
+      margin: 20px 0;
+    }
+  }
+}
+
+

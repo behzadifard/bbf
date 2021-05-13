@@ -1,0 +1,362 @@
+html{
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: $FontFamily;
+  background-color: $bodyBackground;
+  font-size: 17px;
+  line-height: 1.6rem;
+  animation: transitionInY 0.75s;
+}
+
+.clearfix:after{
+  content: '.';
+   height: 0;
+   display: block;
+   visibility: hidden;
+   clear: both;
+}
+
+p, ul li, a{
+  font-family: 'Nanum Gothic', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: lighten($secondaryColor, 35%);
+}
+
+ul.noStyle{
+  list-style-type: none;
+}
+
+/*==========================
+    Page load Transition
+===========================*/
+@keyframes navbarLink{
+  from{
+    left: 0;
+    
+   
+  }
+  to{
+    left: 30%;
+  
+    
+  }
+}
+
+
+@keyframes navTransitionInY{
+  from{
+    // opacity: 0;
+    height: 0;
+    transform: translateY(-100px);
+    transform: translateX(-1000px);
+  }
+  to{
+    // opacity: 1;
+    height: auto;
+    transform: translateY(0);
+    transform: translateX(0);
+  }
+}
+@keyframes transitionInY{
+  from{
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes transitionInX{
+  from{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes transitionInX-2{
+  from{
+    opacity: 0;
+    transform: translateX(-1000px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+/*================
+    row
+================*/
+
+.row-white{
+  background: #f9f9f9;
+  max-width: 100%;
+  .container{
+    padding: 5rem 8rem;
+    width: 100%;
+    p, ul li{
+      color: #333;
+      font-family: 'Nanum Gothic', sans-serif;
+    }
+    a{
+      color: #ce1141;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+
+  .container-2{
+    padding: 1rem 8rem;
+    width: 100%;
+    p, ul li{
+      color: #333;
+      font-family: 'Nanum Gothic', sans-serif;
+    }
+    a{
+      color: #ce1141;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+
+}
+
+
+.row-red{
+  background: $primaryColor;
+  width: 100%;
+
+  .container{
+    padding: 5rem 8rem;
+    width: 100%;
+    p, ul li{
+      color: lighten($secondaryColor, 50%);
+      font-family: 'Nanum Gothic', sans-serif;
+    }
+    a{
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+
+  .container-2{
+    padding: 1rem 8rem;
+    width: 100%;
+    p, ul li{
+      color: lighten($secondaryColor, 50%);
+      font-family: 'Nanum Gothic', sans-serif;
+    }
+    a{
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+}
+
+.row-black{
+  background: #000;
+  width: 100%;
+
+  .container{
+    padding: 5rem 8rem;
+    width: 100%;
+    h1, h2, h3, a, p, ul li{
+    font-family: 'Nanum Gothic', sans-serif;
+    }
+    a{
+      text-decoration: none;
+      font-weight: normal;
+    }
+  }
+
+  .container-2{
+    padding: 1rem 8rem;
+    width: 100%;
+    h1, h2, h3, a, p, ul li{
+      // color: lighten($secondaryColor, 50%);
+      font-family: 'Nanum Gothic', sans-serif;
+    }
+    a{
+      text-decoration: none;
+      font-weight: normal;
+    }
+  }
+}
+
+.row-black2{
+  background: lighten(#000, 3%);
+  width: 100%;
+
+  .container{
+    padding: 5rem 8rem;
+    width: 100%;
+    p, ul li{
+      // color: lighten($secondaryColor, 50%);
+      font-family: 'Nanum Gothic', sans-serif;
+    }
+    a{
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+}
+
+.row-grey{
+  background: #5c5c5c;
+}
+
+
+/*================
+    Title
+================*/
+.title-white-center{
+  color: #fff;
+  font-size: 28px;
+  margin: 1rem 0 1rem 0;
+  text-align: center;
+}
+.title-white-left{
+  color: #fff;
+  font-size: 28px;
+  margin: 1rem 0 1rem 0;
+  text-align: left;
+}
+.title-red-left{
+  color: $secondaryColor;
+  font-size: 28px;
+  margin: 1rem 0 1rem 0;
+  text-align: left; 
+}
+.title-red-center{
+  color: $primaryColor;
+  font-size: 28px;
+  margin: 1rem 0 1rem 0;
+  text-align: center; 
+}
+
+
+
+
+
+/*================
+    Image
+================*/
+img{
+  width: 100%;
+}
+
+
+/*================
+    Headline red
+================*/
+.headline-red{
+  padding: 1em 1.2em .7em 1.2em;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  font-size: 3rem;
+  background: $primaryColor;
+  color: #fff;
+  display: inline-block;
+  transition: .2s;
+  transform-origin: center top;
+  transform: scaleY(0);
+}
+.headline-red[data-scroll="in"]{
+  transform: scaleY(1);
+  transition-delay: .3s;
+}
+.headline-red[data-scroll="in"]::before{
+  transform: scaleY(0);
+  transition-delay: .5s;
+}
+
+/*================
+    Headline black
+================*/
+.headline-black{
+  padding: 1em 1.2em .7em 1.2em;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  font-size: 3rem;
+  background: #000;
+  color: #fff;
+  display: inline-block;
+  transition: .2s;
+  transform-origin: center top;
+  transform: scaleY(0);
+}
+.headline-black[data-scroll="in"]{
+  transform: scaleY(1);
+  transition-delay: .3s;
+}
+.headline-black[data-scroll="in"]::before{
+  transform: scaleY(0);
+  transition-delay: .5s;
+}
+
+
+.text-center{
+  text-align: center;
+}
+
+.color-white{
+  color: #fff;
+}
+.color-yellow{
+  color: #f7df1e;
+}
+.color-black{
+  color: #111;
+}
+.color-red{
+  color: #ce1141;
+}
+.color-blue{
+  color: #bccfee;
+}
+/*================
+    margin and padding classes
+================*/
+$spaceamounts: (1,2,3,4,5);
+@each $space in $spaceamounts{
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+  .mx-#{$space}{
+    margin: 0 #{$space}rem;
+  }
+
+  .p-#{$space}{
+    padding: #{$space}rem;
+  }
+  .py-#{$space}{
+    padding: #{$space}rem 0;
+  }
+  .px-#{$space}{
+    padding: 0 #{$space}rem;
+  }
+}
+
+

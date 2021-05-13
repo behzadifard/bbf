@@ -1,0 +1,80 @@
+.desk{
+  background:  url('../images/background/header-image-black-000.png');
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90% 80%;
+  position: relative;
+  height: 110vh;
+
+
+  #cc{
+    position: absolute;
+    top: -300px;
+    left: 47%;
+    width: 4em;
+    height: auto;
+    z-index: 4;
+
+    transition: 2.2s;
+    transform-origin: center top;
+    transform: scaleY(1);
+
+  }
+  #cc[data-scroll="in"]{
+    transform: scaleY(1);
+    top: 5.5rem;
+    transition-delay: .3s;
+  }
+  #cc[data-scroll="in"]::before{
+    transform: scaleY(0);
+    transition-delay: .5s;
+  }
+
+  #cc2{
+    position: absolute;
+    top: -400px;
+    left: 56%;
+    width: 4em;
+    height: auto;
+    z-index: 4;
+
+    transition: 4s;
+    transform-origin: center top;
+    transform: scaleY(1);
+
+  }
+  #cc2[data-scroll="in"]{
+    transform: scaleY(1);
+    top: 11rem;
+    transition-delay: .3s;
+  }
+  #cc2[data-scroll="in"]::before{
+    transform: scaleY(0);
+    transition-delay: .5s;
+  }
+
+  #cc3{
+    position: absolute;
+    top: -480px;
+    left: 65%;
+    width: 4em;
+    height: auto;
+    z-index: 4;
+
+    transition: 3s;
+    transform-origin: center top;
+    transform: scaleY(1);
+
+  }
+  #cc3[data-scroll="in"]{
+    transform: scaleY(1);
+    top: 18rem;
+    transition-delay: .3s;
+  }
+  #cc3[data-scroll="in"]::before{
+    transform: scaleY(0);
+    transition-delay: .5s;
+  }
+}
+
