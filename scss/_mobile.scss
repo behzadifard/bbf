@@ -106,23 +106,45 @@ nav.navbar{
 
   .header-title{
     position: absolute;
-    top: 5rem;
-    left: .6rem;
+    top: 8.2rem;
+    left: 8rem;
     padding: .2rem 1rem;
     background:#333;
     color: #fff;
-    animation: transitionInX 2s;
+    animation: transitionInY 7s;
     font-size: 1rem;
   }
   .header-title2{
     position: absolute;
-    top: 7rem;
+    top: 12rem;
     left: 4rem;
     padding: .2rem 1rem;
     background:$primaryColor;
     color: #fff;
     font-size: 1rem;
-    animation: transitionInX 3s;
+    animation: transitionInY 5s;
+  }
+  .header-title3{
+    position: absolute;
+    top: 4rem;
+    left: .6rem;
+    padding: .2rem 1rem;
+    background:#333;
+    color: #fff;
+    font-size: 1rem;
+    z-index: 9;
+    animation: transitionInX 2s;
+  }
+  .header-title4{
+    position: absolute;
+    top: 6.1rem;
+    left: 4rem;
+    padding: .2rem 1rem;
+    background:$primaryColor;
+    color: #fff;
+    font-size: 1rem;
+    z-index: 9;
+    animation: transitionInX-2 1s;
   }
   video{
     display: block;

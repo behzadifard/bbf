@@ -20,12 +20,12 @@ div.header-section{
 }
 .header-title{
   position: absolute;
-  top: 5.1rem;
-  left: 2rem;
+  top: 18rem;
+  right: 10rem;
   padding: 1.2rem 3rem;
   background:#333;
   color: #fff;
-  animation: transitionInX 2s;
+  animation: transitionInX 3s;
 }
 .header-title2{
   position: absolute;
@@ -39,20 +39,20 @@ div.header-section{
 
 .header-title3{
   position: absolute;
-  top: 20rem;
-  left: 40rem;
+  top: 5.1rem;
+  left: .6rem;
   padding: 1.2rem 3rem;
   background:#333;
   color: #fff;
-  animation: transitionInX-2 2s;
+  animation: transitionInX 2s;
 }
 .header-title4{
   position: absolute;
-  top: 24rem;
-  left: 38rem;
+  top: 9rem;
+  left: 6rem;
   padding: 1.2rem 3rem;
   background:$primaryColor;
   color: #fff;
-  animation: transitionInX-2 3s;
+  animation: transitionInX-2 1s;
 }
 
