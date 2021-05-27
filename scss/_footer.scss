@@ -1,17 +1,16 @@
 footer{
   display: flex;
   flex-direction: row;
-  height: 16rem;
+  height: 16.5rem;
   width: 100%;
   background-color: #003c4b;
 
   .div-1{
-    height: 15rem;
     width: 100%;
     position: relative;
     div{
       position: absolute;
-      top: 3.8rem;
+      top: 3rem;
       left: 17rem;
 
       h2{

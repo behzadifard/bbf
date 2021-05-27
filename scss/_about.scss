@@ -352,12 +352,13 @@
       padding: 0rem 0rem;
       width: 100%;
       img{
-        height: 300px;
+        height: 350px;
         width: 100%;
         padding: 2rem 1rem;
         border: 0;
       }
     }
+
     .card-text{
       padding: 1rem;
       text-align: left;
@@ -384,7 +385,18 @@
           color: #111;
         }
       }
-    
+    }
+    .card-4{
+      
+      
+
+      img{
+        width: 45%;
+        height: auto;
+        padding: 2rem 1rem;
+        background: #f2f3f7;
+      }
+
     }
   }
 }

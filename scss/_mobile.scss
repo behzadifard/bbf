@@ -105,14 +105,7 @@ nav.navbar{
   
 
   .header-title{
-    position: absolute;
-    top: 8.2rem;
-    left: 8rem;
-    padding: .2rem 1rem;
-    background:#333;
-    color: #fff;
-    animation: transitionInY 7s;
-    font-size: 1rem;
+    display: none;
   }
   .header-title2{
     position: absolute;
@@ -718,7 +711,7 @@ nav.navbar{
       padding: 0;
       width: 100%;
       img{
-        height: 100%;
+        height: 300px;
         width: 100%;
         border: 0;
         margin: 0;
@@ -753,6 +746,17 @@ nav.navbar{
       }
     
     }
+    .card-4{
+       
+
+      img{
+        width:100%;
+        height: auto;
+        padding: 2rem 1rem;
+        background: #f2f3f7;
+      }
+
+    }
   }
 }
 
@@ -772,7 +776,7 @@ nav.navbar{
     padding: 2em;
 
     h2{
-      margin-top: 1em;
+      margin-top: 0em;
     }
   }
 }
@@ -1424,17 +1428,17 @@ iframe.persia-video-01{
 footer{
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  height: 70vh;
   width: 100%;
-  background-color: #003c4b;
+  background-color:#003c4b;
 
   .div-1{
-    height: 15rem;
+    height: 17rem;
     width: 100%;
     position: relative;
     div{
       position: absolute;
-      top: 13rem;
+      top: 14rem;
       left: 1.3rem;
 
       h2{
