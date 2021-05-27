@@ -5,16 +5,23 @@
 
 ******************** Go in & out from  directory Bahram ********************
 
-out -----> cd ..
-in  -----> cd Bahram
+out                   -----> cd ..
+in                    -----> cd Bahram
 
+list of files         -----> ls
+list of files         -----> dir  ( ls & dir are the same )
+
+make a new directory  -----> mkdir test
+remove a directory          -----> rmdir test
+creat new file in directory -----> $ touch index.html
+remove file                 -----> $ rm index.html 
 
 
 
 
 ******************** create files in directory  ********************
 
------> $ touch index.html 
+
 
 
 
