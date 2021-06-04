@@ -19,7 +19,7 @@ remove file                 -----> $ rm index.html
 
 
 
-******************** create files in directory  ********************
+
 
 
 
@@ -73,6 +73,10 @@ remove file                 -----> $ rm index.html
 ******************** Commit ********************
 
 -----> $ git commit -m 'comment comes here'
+
+********************Review all Commits ********************
+-----> $git log
+-----> $git log --oneline
 
 
 
