@@ -84,7 +84,8 @@ remove file                 -----> $ rm index.html
 ******************** Branches ********************
 Create new branch desk -----> $ git branch desk
 Switch                 -----> $ git checkout desk
-Delete                 -----> $ git branch desk -d
+Delete                 -----> $ git branch desk -d ( it deletes the branch which is merged already)
+Delete                 -----> $ git branch desk -D ( it deletes unmerged brnach)
 
 How branches work:
 1- make new branch
