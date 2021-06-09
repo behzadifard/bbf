@@ -3,18 +3,18 @@
 ===========================================================================================
 
 
-******************** Go in & out from  directory Bahram ********************
+Go in & out from  directory Bahram:
 
-out                   -----> cd ..
-in                    -----> cd Bahram
+out                            -----> cd ..
+in                             -----> cd Bahram
 
-list of files         -----> ls
-list of files         -----> dir  ( ls & dir are the same )
+list of files                  -----> ls
+list of files                  -----> dir  ( ls & dir are the same )
 
-make a new directory  -----> mkdir test
-remove a directory          -----> rmdir test
-creat new file in directory -----> $ touch index.html
-remove file                 -----> $ rm index.html 
+make a new directory           -----> mkdir test
+remove a directory             -----> rmdir test
+creat new file in directory    -----> $ touch index.html
+remove file                    -----> $ rm index.html 
 
 
 
@@ -27,65 +27,98 @@ remove file                 -----> $ rm index.html
 
 
 ===========================================================================================
-                            GIT SECTION
+                            Iinitialize current directory as Local Repository
 ===========================================================================================
 
-******************** initialize current directory as Local Repository ********************
 
 -----> $ git init
 
 
 
-******************** Check git version ********************
+
+===========================================================================================
+                            GIT version
+===========================================================================================
 
 -----> $ git --version
 
 
 
-******************** Register users in git  ********************
+
+
+===========================================================================================
+                             User
+===========================================================================================
+
+Register an user to git: 
 
 -----> $ git config --global user.name 'Bahram Behzadi'
 -----> $ git config --global user.email 'behzadi-fard@gmx.de'
 
 
+User name and email:
 
-******************** Check Users list  ********************
-
------> $ git config user.name 
-
-
-
-******************** Add file(s) to Stage area ********************
-
------> $ git add index.html
------> $ git add *.html  -> will add all files with .html extenstion to the stage area
------> $ git add .       -> will add all files to stage area
+-----> $ git config user.name   -> shows user name
+-----> $ git config user.email  -> shows user email
 
 
 
 
-******************** Remove files from Stage area ********************
-
------> $ git rm --cached index.html
 
 
 
-******************** Commit ********************
+===========================================================================================
+                            Stage Area
+===========================================================================================
+
+-----> $ git add index.html           -> will add only one file ( in this case index.html)
+-----> $ git add *.html               -> will add all files with .html extenstion to the stage area
+-----> $ git add .                    -> will add all files to stage area
+-----> $ git rm --cached index.html   -> removes index.html from satging Area
+
+
+
+
+
+
+===========================================================================================
+                            Commit
+===========================================================================================
 
 -----> $ git commit -m 'comment comes here'
 
-********************Review all Commits ********************
------> $git log
------> $git log --oneline
+
+Review all Commits:
+
+-----> $ git log
+-----> $ git log --oneline
+
+
+Checkout, Revert, Reset:
+
+-----> $ git checkout 04dew3r ->  Just checking the states of this particular Commit, it makes no changes
+-----> $ git revert   04dew3r ->  Go back to state of this particular commit. 
+-----> $ git reset    04dew3r ->  Go back to state of this particular commit and delete next commit points.
 
 
 
 
-******************** Branches ********************
-Create new branch desk -----> $ git branch desk
-Switch                 -----> $ git checkout desk
-Delete                 -----> $ git branch desk -d ( it deletes the branch which is merged already)
-Delete                 -----> $ git branch desk -D ( it deletes unmerged brnach)
+
+
+
+
+===========================================================================================
+                            Branches
+===========================================================================================
+
+-----> $ git branch desk         ->   Create new branch desk  ( Switching: Checkout command is required )
+-----> $ git checkout -b desk    ->   Creat new branch desk   ( Switching is automaticly done. )
+-----> $ git branch              ->   list of branches   
+-----> $ git branch -a           ->   Also list of branches                             
+                              
+-----> $ git checkout desk       ->   Switch 
+-----> $ git branch desk -d      ->   Delete ( it deletes the branch which is merged already)
+-----> $ git branch desk -D      ->   Delete ( it deletes unmerged brnach)
 
 How branches work:
 1- make new branch
@@ -93,13 +126,18 @@ How branches work:
 3- add all changes to stage area
 4- commit all
 5- now, if you switch back to master branch you will see no changes. 
-6- merge new edited branch while you are in master
+6- merge new edited branch while you are in master branch
 
 
 
 
 
-******************** Define remote Repository to git ********************
+
+
+===========================================================================================
+                            Repository
+===========================================================================================
+
 
 1- make an account in github
 2- $ git remote add origin https://github.com/behzadifard/behzadifard.github.io 
@@ -109,15 +147,17 @@ How branches work:
 
 
 
-
-******************** clone ********************
+===========================================================================================
+                            Clone
+===========================================================================================
 
 -----> $ git clone address....
 
 
 
-******************** Pull ********************
 
-*** Pull -> if someone makes changes on master branch you can uptodate your branch
+===========================================================================================
+                            Pull
+===========================================================================================
 
 -----> $ git pull
