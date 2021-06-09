@@ -138,6 +138,12 @@ How branches work:
                             Repository
 ===========================================================================================
 
+- Make a new Repository in Github. This case wuld be : Home
+- Introduce new Rep to git and push main Branch there:
+
+   -----> $ git push https://github.com/behzadifard/Home.git main
+
+
 
 1- make an account in github
 2- $ git remote add origin https://github.com/behzadifard/behzadifard.github.io 
