@@ -87,7 +87,6 @@ User name and email:
 
 -----> $ git commit -m 'comment comes here'
 
-<<<<<<< HEAD
 
 Review all Commits:
 
@@ -101,8 +100,6 @@ Checkout, Revert, Reset:
 -----> $ git revert   04dew3r ->  Go back to state of this particular commit. 
 -----> $ git reset    04dew3r ->  Go back to state of this particular commit and delete next commit points.
 
-=======
->>>>>>> parent of 248a2de... Git-Command-page changed
 
 
 
