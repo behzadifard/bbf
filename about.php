@@ -208,8 +208,7 @@
         <li>Psychology</li>
         <li>Mysticism and Sufism</li>
         <li>Poetry and Literature</li>
-        <li>Classical music such as Beethoven, Mozart</li>
-        <li>Other musics: Latino, Reggae, Reggaeton, Zumba</li>
+        <li>Bach, Mozart, Nietzsche, Shakespeare</li>
       </ul>
     </div>
   </div>
